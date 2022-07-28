@@ -10,6 +10,17 @@ M.general = {
     }
 }
 
+M.lspconfig = {
+    n = {
+        ["gl"] = {
+            function ()
+                vim.lsp.diagnostic.show_line_diagnostics({ border = "rounded" })
+            end,
+            "   lsp line diagnostics",
+        }
+    }
+}
+
 M.fugitive = {
   n = {
     ["<leader>gs"] = {":Git<CR>"},

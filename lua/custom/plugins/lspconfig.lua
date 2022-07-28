@@ -4,7 +4,7 @@ M.setup_lsp = function(attach, capabilities)
    local lspconfig = require "lspconfig"
 
    -- lspservers with default config
-   local servers = { "gopls", "tsserver", "jsonls", "yamlls" }
+   local servers = { "gopls", "tsserver", "jsonls", "yamlls", "kotlin_language_server" }
 
    for _, lsp in ipairs(servers) do
       lspconfig[lsp].setup {
